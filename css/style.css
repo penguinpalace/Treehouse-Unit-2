@@ -1,0 +1,324 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  color: #434242;
+  background-color: #F0F8FF;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  color: #434242;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7C7A7A;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+.main-nav,
+.intro {
+		display: block;
+		text-align: center;
+		padding: 10px 15px;
+    list-style-type: none;
+	}
+
+.main-nav a {
+  padding: 10px 15px;
+  margin-top: 5px;
+  display: block;
+  background: #fff;
+}
+
+.intro {
+ padding: 25px;
+}
+
+/* =================================
+  Layout Containers
+==================================== */
+
+.profile-picture {
+  padding: 0 30px;
+}
+
+.portfolio-container {
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.portfolio {
+  display: block;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.portfolio-image {
+  padding-top: 15px;
+}
+
+.contact {
+  padding-top: 30px;
+  display: block;
+  text-align: center;
+  margin: 0 15px;
+}
+
+/* =================================
+  Footer
+==================================== */
+
+.main-footer {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.main-footer p {
+  float: left;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.footer-nav {
+  display: none;
+}
+
+.top {
+  float: right;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+hr {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  border-top: 0.2px solid #E9E3E3;
+}
+
+
+/* =================================
+  Media Queries 768px
+==================================== */
+
+@media (min-width: 768px) {
+  .container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  }
+
+p {
+  font-size: 1.2em;
+}
+
+.main-nav li {
+  display: inline-block;
+  text-align: center;
+  list-style-type: none;
+}
+
+.main-nav a {
+  padding: 10px 15px;
+  display: block;
+  background: #f0f8ff;
+  margin: 0 auto;
+}
+
+.intro,
+.intro p {
+  padding: 0 5px 60px 20px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.profile-picture {
+  float: right;
+  overflow: auto;
+  width: 50%;
+}
+
+.portfolio {
+  float: left;
+  min-height: 370px;
+  width: 48%;
+  margin: 1%;
+}
+
+.portfolio-container {
+  padding: 20px 20px;
+
+}
+
+.portfolio p {
+  font-size: 0.9em;
+}
+
+.contact p {
+  padding: 20px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+
+.footer-nav,
+.main-footer li {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.footer-nav,
+.footer-nav a {
+  float: right;
+  padding: 10px 20px 20px 20px;
+}
+
+.main-footer p {
+  float: left;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px 20px 20px 20px;
+}
+
+.main-footer a {
+  padding: 0 15px;
+}
+
+.top {
+  display: none;
+}
+
+hr {
+  display: block;
+  width: 90%;
+  border-top: 0.2px solid #E9E3E3;
+  }
+
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* =================================
+  Media Queries 1024px
+==================================== */
+
+@media (min-width: 1024px) {
+  .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+
+.main-header {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#home {
+  float: left;
+  margin: 0 auto;
+  padding: 15px 10px 15px 10px;
+}
+
+.main-header,
+.main-nav {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-nav,
+.main-nav ul {
+  float: right;
+  padding-right: 0;
+}
+
+.intro {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro p {
+  padding-left: 20px;
+}
+
+.profile-picture {
+  float: right;
+  overflow: auto;
+  width: 30%;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.portfolio {
+  float: left;
+  max-width: 32%;
+  margin: 0.666%;
+}
+
+hr {
+  margin-top: 5%;
+  max-width: 1200px;
+}
+
+.main-footer {
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-nav,
+.footer-nav a {
+  padding: 10px 20px 20px 20px;
+}
+
+.main-footer p {
+  padding: 10px;
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
